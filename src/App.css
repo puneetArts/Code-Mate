@@ -1,0 +1,80 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: rgb(42, 9, 74);
+  color: floralwhite;
+}
+.btnNormal{
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px; 
+    border: 0.2px solid rgb(117, 113, 113);
+    outline: 0;
+    cursor:pointer;
+}
+/* Add this to your App.css (or index.css)
+  It styles the output from react-markdown 
+*/
+
+.markdown-response {
+  padding: 10px 15px;
+  color: #d4d4d4; /* Light gray text for readability */
+  line-height: 1.6;
+}
+
+/* Style the Headings (e.g., "Code Quality Rating") */
+.markdown-response h1,
+.markdown-response h2,
+.markdown-response h3 {
+  font-weight: 600;
+  color: #5eead4; /* A nice cyan/teal color */
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3f3f46; /* A subtle separator */
+  padding-bottom: 4px;
+}
+
+/* Style bold text */
+.markdown-response strong {
+  color: #ba7a25; /* A nice yellow for emphasis */
+}
+
+/* Style bullet points (lists) */
+.markdown-response ul,
+.markdown-response ol {
+  margin-left: 20px;
+}
+.markdown-response li {
+  margin-bottom: 8px;
+}
+
+/* This is the "cool" part for code blocks and errors! */
+.markdown-response pre {
+  background-color: #1e1e1e; /* A slightly different dark bg */
+  border: 1px solid #3f3f46;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto; /* Allow horizontal scrolling for long code */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style inline code snippets */
+.markdown-response code {
+  background-color: #313133;
+  color: #e36a8c; /* A pink/magenta for code */
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Make sure code inside a 'pre' block doesn't get the pink style */
+.markdown-response pre > code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
