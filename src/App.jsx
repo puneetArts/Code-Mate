@@ -158,7 +158,7 @@ const App = () => {
         {/* RIGHT PANEL */}
         <div className="right !p-[10px] bg-zinc-900 w-[50%] h-[100%] overflow-auto">
           <div className="topTab gap-3 justify-center border-t-[1px] border-b-[1px] border-[#3c3c3d] flex items-center  h-[60px]">
-           <p className="bg-gradient-to-r from-[#1cacd0] via-[#628d98] to-[#9fa6a7] bg-clip-text text-transparent font-light text-[28px]">Response </p><AiOutlineDeploymentUnit color="#42a2d2" size={30}/>
+           <p className="bg-gradient-to-r from-[#1cacd0] via-[#628d98] to-[#9fa6a7] bg-clip-text text-transparent font-light text-[28px]">Response </p><AiOutlineDeploymentUnit color="#42a2d2" size={33}/>
           </div>
           {loading ? (
             <div className="flex justify-center items-center h-[calc(100%-60px)]">
