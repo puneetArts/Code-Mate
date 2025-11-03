@@ -1,7 +1,7 @@
 // src/components/LandingPage.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Code2, TreePine } from "lucide-react";
+import { Code2, Boxes  } from "lucide-react";
 import "./LandingPage.css"; // 👈 make sure this is imported
 
 const LandingPage = () => {
@@ -37,7 +37,7 @@ const LandingPage = () => {
         {/* Visualization Box */}
         <div className="feature-box slide-right bg-gradient-to-br from-[#304e59] to-[#1f3a4d] !p-8 rounded-2xl shadow-lg border border-gray-600 w-full md:w-1/2 transition-transform duration-300 hover:scale-105 hover:shadow-emerald-400/40">
           <div className="flex flex-col items-center text-center gap-4">
-            <TreePine className="w-12 h-12 text-emerald-300" />
+            <Boxes  className="w-12 h-12 text-emerald-400" />
             <h2 className="text-2xl font-semibold">Code Visualizer</h2>
             <p className="opacity-80">
               Visualize your DSA code as live structures — linked lists, trees, or stacks — and see your algorithms in action through interactive visuals.
