@@ -9,8 +9,8 @@ const Navbar = () => {
     <>
       <div className='nav flex items-center justify-between  h-[90px] bg-gradient-to-r from-[#062229] via-[#283c41] to-[#465153]' style={{ padding: "0px 150px" }}>
 
-        <div className="logo flex items-center gap-[3px] "><span className="text-2xl font-bold text-white ml-2">&lt;</span>
-          <BotMessageSquare size={30} color='#fff' /><span className="text-2xl font-bold text-white !ml-0 !mr-3">&gt;</span>
+        <div className="logo flex items-center gap-[3px] "><span className="text-2xl font-bold text-white ml-2"></span>
+          <BotMessageSquare size={30} color='#fff' /><span className="text-2xl font-bold text-white !ml-0 !mr-3"></span>
           <Link
             to="/"
             className="text-2xl font-bold text-white ml-2 hover:[text-shadow:0_2px_4px_#959199] transition-all"

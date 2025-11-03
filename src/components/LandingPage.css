@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../assets/images/bg2.jpg') ; /* Correct relative path from components folder */
+    background-size: cover;
+
+  color: floralwhite;
+}
+
+/* ----------- General Page Animations ----------- */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------- Box Animations ----------- */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ----------- Apply Animations ----------- */
+.fade-slide-down {
+  animation: fadeSlideDown 0.9s ease-out forwards;
+}
+
+.fade-slide-up {
+  animation: fadeSlideUp 0.9s ease-out forwards;
+}
+
+.slide-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.slide-right {
+  animation: slideInRight 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.delay-btn {
+  animation-delay: 0.8s;
+}
+
+.feature-box {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* ----------- Responsive Polish ----------- */
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 2.2rem;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+}
+/* ----------- Glass Effect on Hover ----------- */
+.feature-box:hover {
+  background: rgba(35, 34, 34, 0.08) !important; /* slight transparency */
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  border-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+}
