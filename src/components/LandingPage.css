@@ -134,9 +134,9 @@ body {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #22d3ee; /* cyan cursor */
-  width: 0;
+  width: 1;
   animation:
-    typewriter-8 2s steps(10, end) 0.5s 1 normal both,
+    typewriter-8 1s steps(10, end) 0.5s 1 normal both,
     blink 0.75s step-end infinite; /* blinks only 3 times after finishing */
 }
 
