@@ -13,8 +13,8 @@ const Navbar = () => {
           <BotMessageSquare size={30} color='#fff' /><span className="text-2xl font-bold text-white !ml-0 !mr-3"></span>
           <Link
             to="/"
-            className="text-2xl font-bold text-white ml-2 hover:[text-shadow:0_2px_4px_#959199] transition-all"
-          >CodeMate</Link>
+            className="text-2xl font-bold text-white ml-2 hover:[text-shadow:0_2px_4px_#959199] transition-all font-mono animate-typewriter-8"
+          >CodeMate.</Link>
         </div>
         <div className="icons flex items-center gap-[20px] ">
           <i className='cursor-pointer transition-all hover:text-[#9333ea]'>
