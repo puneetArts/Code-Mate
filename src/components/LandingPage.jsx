@@ -8,10 +8,10 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center  text-white text-center px-4 overflow-hidden">
+    <div className="h-screen w-full flex flex-col justify-center items-center text-white text-center px-4 overflow-hidden font-mono">
       
       {/* Heading */}
-      <h1 className="text-5xl font-bold !mb-6 fade-slide-down">
+      <h1 className="text-4xl font-bold !mb-6 animate-typewriter">
         Hey coder! I’m <span className="text-cyan-300">CodeMate</span> — your AI coding companion.
       </h1>
 

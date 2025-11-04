@@ -105,3 +105,28 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
   transition: all 0.4s ease;
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 52ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animate-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid cyan;
+  animation:
+    typewriter 3.5s steps(52, end) 1s 1 normal both,
+    blink 0.75s step-end infinite;
+}
+
