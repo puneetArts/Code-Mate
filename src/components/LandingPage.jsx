@@ -1,8 +1,7 @@
-// src/components/LandingPage.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Code2, Boxes  } from "lucide-react";
-import "./LandingPage.css"; // 👈 make sure this is imported
+import "./LandingPage.css"; 
 
 const LandingPage = () => {
   const navigate = useNavigate();

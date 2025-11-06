@@ -1,4 +1,3 @@
-// src/components/EditorApp.jsx
 import { useState } from 'react';
 import Navbar from './Navbar';
 import Editor from '@monaco-editor/react';
@@ -8,8 +7,7 @@ import { RingLoader } from "react-spinners";
 import { FaProjectDiagram } from "react-icons/fa";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
 import { SunDim } from 'lucide-react';
-import '../App.css';  // ✅ keep this so styles still apply
-
+import '../App.css';  
 const EditorApp = () => {
   const options = [
     { value: 'javascript', label: 'JavaScript' },
